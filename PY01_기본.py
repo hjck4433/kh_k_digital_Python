@@ -26,11 +26,18 @@ print(f"""
 주소 : {addr}
 """)
 
+
 # 파이썬은 불리언 값이 대문자로 시작
-isAdult = True
+is_adult = True
 
 # 들여쓰기를 지켜줘야 함 (빈칸 수 일정하게)
-if isAdult :
+if is_adult:
     print("나는 성인 입니다.")
-else :
+else:
     print("나는 성인이 아닙니다.")
+
+"""
+    작성자 : 레몬레몬
+    수정날짜 : 2023.09.06
+"""
+print([1, 2, 3]) # 리스트 출력
