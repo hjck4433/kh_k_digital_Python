@@ -59,17 +59,21 @@ from datetime import datetime
 
 # 4. 개수가 정해지지 않은 여러개의 정수를 입력 받아 합계와 평균 구하기
 input_nums = list(input("숫자입력 : ").split())
-print(input_nums)
+#print(input_nums)
 sum = 0
 cnt = 0
 list_len = len(input_nums)
-while True:
-    sum += int(input_nums[cnt])
-    cnt += 1
-    if cnt == list_len: break
+# while True:
+#     sum += int(input_nums[cnt])
+#     cnt += 1
+#     if cnt == list_len: break
 
 # for n in input_nums:
 #     sum += int(n)
+
+for i in range(0, len(input_nums)) :
+    sum += int(input_nums[i])
+
 
 avg = sum / list_len
 print(f"합계 :{sum} , 평균 : {avg:.2f}")
