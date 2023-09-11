@@ -24,14 +24,24 @@
 # for e in avg_list:
 #     print(f"{e:.3f}%")
 
-c = int(input())
-case_list = []
-for i in range(c):
-    case_list.append(list(map(int,input().split())))
+# c = int(input())
+# case_list = []
+# for i in range(c):
+#     case_list.append(list(map(int,input().split())))
+#
+# for i in case_list :
+#     avg = sum(i[1:]) / i[0]
+#     cnt = 0
+#     for e in range(1,len(i)) :
+#         if i[e] > avg : cnt+=1
+#     print(f"{cnt / i[0] * 100 :.3f}%")
 
-for i in case_list :
-    avg = sum(i[1:]) / i[0]
-    cnt = 0
-    for e in range(1,len(i)) :
-        if i[e] > avg : cnt+=1
-    print(f"{cnt / i[0] * 100 :.3f}%")
+c = int(input())
+avg_list = []
+for i in range(c):
+    case_list = list(map(int,input().split()))
+    n = case_list.pop(0)
+    case_list = list(filter(lambda s: s > sum(case_list)/n, case_list))
+    avg_list.append(len(case_list) / n * 100)
+
+for a in avg_list: print(f"{a:.3f}%")
