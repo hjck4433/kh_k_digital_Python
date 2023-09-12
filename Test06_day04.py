@@ -16,10 +16,8 @@
 #
 # c = int(input())
 # avg_list = []
-# while True:
+# for i in range(c) :
 #     avg_list.append(avg_student(input_score()))
-#     c -= 1
-#     if c == 0: break
 #
 # for e in avg_list:
 #     print(f"{e:.3f}%")
