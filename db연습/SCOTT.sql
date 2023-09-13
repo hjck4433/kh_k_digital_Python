@@ -146,9 +146,3 @@ WHERE COMM IS NOT NULL; -- = NULL로 하면 연산 불가
 SELECT *
 FROM EMP
 WHERE MGR IS NOT NULL;
-
-
-
-
-
-
